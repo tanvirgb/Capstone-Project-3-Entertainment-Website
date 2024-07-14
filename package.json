@@ -19,6 +19,7 @@
   "homepage": "https://github.com/tanvirgb/Capstone-Project-3-Entertainment-Website#readme",
   "dependencies": {
     "axios": "^1.7.2",
+    "ejs": "^3.1.10",
     "express": "^4.19.2"
   }
 }
