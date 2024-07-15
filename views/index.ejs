@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 
-
 <body class="bg-dark">
 
     <!-- Navigation Bar -->
@@ -19,16 +18,18 @@
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                 <a href="/"
                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <span class="fs-4 fw-semibold text-primary">
-                        Entertainment Website
-                    </span>
+                    <h1><span class="fs-4 fw-semibold text-primary">
+                            Entertainment Website
+                        </span></h1>
                 </a>
 
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Top Movies & Series</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Top Movies</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Top Series</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Top Anime</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Top Games</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Top Books</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                 </ul>
             </header>
@@ -36,49 +37,46 @@
 
     <!-- Carousel -->
     <section id="carousel">
-        <div class="bd-example m-0 border-0 mx-5">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                data-bs-interval="5000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777"></rect>
-                            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
-                        </svg>
-                    </div>
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#666"></rect>
-                            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
-                        </svg>
-                    </div>
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#555"></rect>
-                            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
-                        </svg>
-                    </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <%# if(locals.big_image0){ %>
+                        <img class="bd-placeholder-img bd-placeholder-img-lg d-block mx-auto" height="450"
+                            src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@"
+                            alt="first slide">
+                        <%# }else{ %>
+                            <!-- <p class="text-warning">Something went wrong!</p> -->
+                            <%# } %>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <%# if(locals.big_image1){ %>
+                        <img class="bd-placeholder-img bd-placeholder-img-lg d-block mx-auto" height="450"
+                            src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL75_UY562_CR8,0,380,562_.jpg"
+                            alt="second slide">
+                        <%# }else{ %>
+                            <!-- <p class="text-warning">Something went wrong!</p> -->
+                            <%# } %>
+                </div>
+                <div class="carousel-item">
+                    <%# if(locals.big_image2){ %>
+                        <img class="bd-placeholder-img bd-placeholder-img-lg d-block mx-auto" height="450"
+                            src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+                            alt="third slide" slide">
+                        <%# }else{ %>
+                            <!-- <p class="text-warning">Something went wrong!</p> -->
+                            <%# } %>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
@@ -87,11 +85,24 @@
         <div class="px-4 py-5 my-5 text-center">
             <h1 class="display-5 fw-bold text-secondary">Not sure what to choose?</h1>
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4 text-light">Let's pick a random Movie, Series, or Game for today!</p>
+                <p class="lead mb-4 text-light">Let's pick a random Movie, Series, Anime, Game or Book for today!</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-info">Pick a Movie or Series</button>
-                    <button type="button" class="btn btn-info">Pick a Anime</button>
-                    <button type="button" class="btn btn-info">Pick a Game</button>
+                    <button type="button" class="btn btn-info"><img src="/assets/images/film-movies-icon.svg"
+                            alt="movie icon">
+                        Pick a Movie</button>
+                    <button type="button" class="btn btn-info"><img class="mt-2"
+                            src="/assets/images/512537_film_movie_play_video_icon.svg" alt="series icon">Pick a
+                        Series</button>
+                    <button type="button" class="btn btn-info"><img class="mt-1"
+                            src="/assets/images/4043233_anime_away_face_no_nobody_icon.svg" alt="anime icon">Pick a
+                        Anime</button>
+                    <button type="button" class="btn btn-info"><img class="mt-2"
+                            src="/assets/images/2317690_control_device_game_gamepad_games_icon.svg" alt="game icon">Pick
+                        a Game</button>
+                    <button type="button" class="btn btn-info"><img class="mt-3"
+                            src="/assets/images/2697663_reading_book_education_apple_books_icon.svg"
+                            alt="book icon">Pick a
+                        Book</button>
                 </div>
             </div>
         </div>
