@@ -1,0 +1,519 @@
+<%- include("partials/header.ejs") %>
+
+    <h1 class="text-primary d-flex justify-content-center align-items-center mb-5">Free to Play Games</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="first movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="second movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="third movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="fourth movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="fifth movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="sixth movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="seventh movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="eighth movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="ninth movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="tenth movie">
+                    <div class="card-body">
+                        <% if(locals.title) { %>
+                            <h5 class="card-title">Title: <%=title%>
+                            </h5>
+                            <% }else{ %>
+                                <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
+                                <% } %>
+
+                                    <% if(locals.plot) { %>
+                                        <p class="card-text">Plot: <%=plot%>
+                                        </p>
+                                        <% }else{ %>
+                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <% } %>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <% if(locals.year) { %>
+                            <li class="list-group-item">Release Year: <%=year%>
+                            </li>
+                            <% }else{ %>
+                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                </li>
+                                <% } %>
+                                    <% if(locals.country) { %>
+                                        <li class="list-group-item">Country: <%=country%>
+                                        </li>
+                                        <% }else{ %>
+                                            <li class="list-group-item">Country: <span
+                                                    class="text-warning">Loading...</span>
+                                                <% } %>
+                                                    <% if(locals.rating) { %>
+                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
+                                            </li>
+                                            <% }else{ %>
+                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
+                                                        class="text-warning">Loading...</span>
+                                                </li>
+                                                <% } %>
+                    </ul>
+                    <div class="card-body mx-auto">
+
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                            class="btn btn-primary">View
+                            Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
