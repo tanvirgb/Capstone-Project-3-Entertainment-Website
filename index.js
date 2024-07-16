@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static("public")); // Serve static files on port 3000 (default  port 3000 if not specified)
-app.get("/home", async (req, res) => {
+app.get("/", async (req, res) => {
   res.render("index.ejs"); // Render the index.ejs file with the requested data.
 });
 

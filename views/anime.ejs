@@ -1,54 +1,48 @@
 <%- include("partials/header.ejs") %>
 
-    <h1 class="text-primary d-flex justify-content-center align-items-center mb-5">Top Anime</h1>
+    <h1 class="text-primary d-flex justify-content-center align-items-center mb-5">Top 10 Anime</h1>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-5">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="first movie">
+                    <img src="<%=locals.image0%>" class="card-img-top" height="250" alt="first anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title0) { %>
+                            <h5 class="card-title">Title: <%=title0%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank0) { %>
+                                        <p class="card-text">Rank: <%=plot%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type0) { %>
+                            <li class="list-group-item">Type: <%=type0%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score0) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score0%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title0%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -57,49 +51,43 @@
 
             <div class="col-md-4">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="second movie">
+                    <img src="<%=locals.image1%>" class="card-img-top" height="250" alt="second anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title1) { %>
+                            <h5 class="card-title">Title: <%=title1%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank1) { %>
+                                        <p class="card-text">Rank: <%=plot1%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type1) { %>
+                            <li class="list-group-item">Type: <%=type1%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score1) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score1%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title1%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -108,49 +96,43 @@
 
             <div class="col-md-4">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="third movie">
+                    <img src="<%=locals.image2%>" class="card-img-top" height="250" alt="third anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title2) { %>
+                            <h5 class="card-title">Title: <%=title2%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank2) { %>
+                                        <p class="card-text">Rank: <%=plot2%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type2) { %>
+                            <li class="list-group-item">Type: <%=type2%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score2) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score2%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title2%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -159,49 +141,43 @@
 
             <div class="col-md-4 mb-5">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="fourth movie">
+                    <img src="<%=locals.image3%>" class="card-img-top" height="250" alt="fourth anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title3) { %>
+                            <h5 class="card-title">Title: <%=title3%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank3) { %>
+                                        <p class="card-text">Rank: <%=plot3%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type3) { %>
+                            <li class="list-group-item">Type: <%=type3%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score3) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score3%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title3%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -210,49 +186,43 @@
 
             <div class="col-md-4">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="fifth movie">
+                    <img src="<%=locals.image4%>" class="card-img-top" height="250" alt="fifth anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title4) { %>
+                            <h5 class="card-title">Title: <%=title4%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank4) { %>
+                                        <p class="card-text">Rank: <%=plot4%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type4) { %>
+                            <li class="list-group-item">Type: <%=type4%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score4) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score4%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title4%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -261,49 +231,43 @@
 
             <div class="col-md-4">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="sixth movie">
+                    <img src="<%=locals.image5%>" class="card-img-top" height="250" alt="sixth anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title5) { %>
+                            <h5 class="card-title">Title: <%=title5%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank5) { %>
+                                        <p class="card-text">Rank: <%=plot5%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type5) { %>
+                            <li class="list-group-item">Type: <%=type5%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score5) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score5%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title5%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -312,49 +276,43 @@
 
             <div class="col-md-4 mb-5">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="seventh movie">
+                    <img src="<%=locals.image6%>" class="card-img-top" height="250" alt="seventh anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title6) { %>
+                            <h5 class="card-title">Title: <%=title6%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank6) { %>
+                                        <p class="card-text">Rank: <%=plot6%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type6) { %>
+                            <li class="list-group-item">Type: <%=type6%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score6) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score6%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title6%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -363,49 +321,43 @@
 
             <div class="col-md-4">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="eighth movie">
+                    <img src="<%=locals.image7%>" class="card-img-top" height="250" alt="eigth anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title7) { %>
+                            <h5 class="card-title">Title: <%=title7%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank7) { %>
+                                        <p class="card-text">Rank: <%=plot7%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type7) { %>
+                            <li class="list-group-item">Type: <%=type7%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score7) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score7%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title7%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -414,49 +366,43 @@
 
             <div class="col-md-4">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="ninth movie">
+                    <img src="<%=locals.image8%>" class="card-img-top" height="250" alt="ninth anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title8) { %>
+                            <h5 class="card-title">Title: <%=title8%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank8) { %>
+                                        <p class="card-text">Rank: <%=plot8%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type8) { %>
+                            <li class="list-group-item">Type: <%=type8%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score8) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score8%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title8%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
@@ -465,49 +411,43 @@
 
             <div class="col-md-12 d-flex justify-content-center align-items-center">
                 <div class="card mx-auto" style="width: 18rem;">
-                    <img src="<%=locals.image%>" class="card-img-top" height="250" alt="tenth movie">
+                    <img src="<%=locals.image9%>" class="card-img-top" height="250" alt="tenth anime">
                     <div class="card-body">
-                        <% if(locals.title) { %>
-                            <h5 class="card-title">Title: <%=title%>
+                        <% if(locals.title9) { %>
+                            <h5 class="card-title">Title: <%=title9%>
                             </h5>
                             <% }else{ %>
                                 <h5 class="card-title">Title: <span class="text-warning">Loading...</span></h5>
                                 <% } %>
 
-                                    <% if(locals.plot) { %>
-                                        <p class="card-text">Plot: <%=plot%>
+                                    <% if(locals.rank9) { %>
+                                        <p class="card-text">Rank: <%=plot9%>
                                         </p>
                                         <% }else{ %>
-                                            <p class="card-text">Plot: <span class="text-warning">Loading...</span></p>
+                                            <p class="card-text">Rank: <span class="text-warning">Loading...</span></p>
                                             <% } %>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <% if(locals.year) { %>
-                            <li class="list-group-item">Release Year: <%=year%>
+                        <% if(locals.type9) { %>
+                            <li class="list-group-item">Type: <%=type9%>
                             </li>
                             <% }else{ %>
-                                <li class="list-group-item">Release Year: <span class="text-warning">Loading...</span>
+                                <li class="list-group-item">Type: <span class="text-warning">Loading...</span>
                                 </li>
                                 <% } %>
-                                    <% if(locals.country) { %>
-                                        <li class="list-group-item">Country: <%=country%>
+
+                                    <% if(locals.score9) { %>
+                                        <li class="list-group-item fw-semibold text-primary">Score: <%=score9%>
                                         </li>
                                         <% }else{ %>
-                                            <li class="list-group-item">Country: <span
+                                            <li class="list-group-item fw-semibold text-primary">Score: <span
                                                     class="text-warning">Loading...</span>
-                                                <% } %>
-                                                    <% if(locals.rating) { %>
-                                            <li class="list-group-item fw-semibold text-primary">Rating: <%=rating%>
                                             </li>
-                                            <% }else{ %>
-                                                <li class="list-group-item fw-semibold text-primary">Rating: <span
-                                                        class="text-warning">Loading...</span>
-                                                </li>
-                                                <% } %>
+                                            <% } %>
                     </ul>
                     <div class="card-body mx-auto">
 
-                        <a href="https://www.youtube.com/results?search_query=<%=locals.title%>" target="_blank"
+                        <a href="https://www.youtube.com/results?search_query=<%=locals.title9%>" target="_blank"
                             class="btn btn-primary">View
                             Trailer</a>
                     </div>
