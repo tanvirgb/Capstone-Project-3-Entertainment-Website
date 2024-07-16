@@ -20,6 +20,18 @@ app.get("/anime", async (req, res) => {
 app.get("/game", async (req, res) => {
   res.render("game.ejs"); // Render the game.ejs file with the requested data.
 });
+
+app.get("/randomMovie", async (req, res) => {
+  res.render("randomMovie.ejs"); // Render the randomMovie.ejs file with the requested data.
+});
+
+app.get("/randomAnime", async (req, res) => {
+  res.render("randomAnime.ejs"); // Render the randomAnime.ejs file with the requested data.
+});
+
+app.get("/randomGame", async (req, res) => {
+  res.render("randomGame.ejs"); // Render the randomGame.ejs file with the requested data.
+});
 // Start the server on port 3000 and log a success message.
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
