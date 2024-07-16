@@ -10,9 +10,12 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/movie", async (req, res) => {
-  res.render("movie.ejs", { test: "Hello, World!" }); // Render the movie.ejs file with the requested data.
+  res.render("movie.ejs"); // Render the movie.ejs file with the requested data.
 });
 
+app.get("/anime", async (req, res) => {
+  res.render("anime.ejs"); // Render the anime.ejs file with the requested data.
+});
 // Start the server on port 3000 and log a success message.
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
