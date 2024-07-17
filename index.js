@@ -9,8 +9,39 @@ app.get("/", async (req, res) => {
   res.render("index.ejs"); // Render the index.ejs file with the requested data.
 });
 
+// app.get("/movie", async (req, res) => {
+//   const options = {
+//     method: "GET",
+//     url: "https://imdb188.p.rapidapi.com/api/v1/getWeekTop10",
+//     headers: {
+//       "x-rapidapi-key": "60cfdf5aaamsh6e485e1678797d0p1ecc8djsn5c284ab834c6",
+//       "x-rapidapi-host": "imdb188.p.rapidapi.com",
+//     },
+//   };
+
+//   try {
+//     const response = await axios.request(options);
+//     const movies = response.data.data.map((movie) => ({
+//       imageUrl: movie.primaryImage.imageUrl,
+//       title: movie.originalTitleText.text,
+//       plot: movie.plot.plotText.plainText,
+//       year: movie.releaseYear.year,
+//       country: movie.releaseDate.country.text,
+//       rating: movie.ratingsSummary.aggregateRating,
+//     }));
+//     res.render("movie.ejs", { movies }); // Render the movie.ejs file with the requested data.
+//   } catch (error) {
+//     console.error("Error:", error.message);
+//     res.status(500).send("Error retrieving movie data.");
+//   }
+// });
+
 app.get("/movie", async (req, res) => {
   res.render("movie.ejs"); // Render the movie.ejs file with the requested data.
+});
+
+app.get("/music", async (req, res) => {
+  res.render("music.ejs"); // Render the music.ejs file with the requested data.
 });
 
 app.get("/anime", async (req, res) => {
