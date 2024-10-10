@@ -19,4 +19,3 @@ An entertainment website using EJS, Bootstrap, Express.js with Axios, and RapidA
 ![top-10-anime-ss](https://github.com/user-attachments/assets/335f81dc-9b7e-4561-adb8-f4b1b50637ac)
 
 ![top-10-free-to-play-games-ss](https://github.com/user-attachments/assets/e7a2a6bd-1c56-4a75-8e3a-3689ba8a649f)
-
